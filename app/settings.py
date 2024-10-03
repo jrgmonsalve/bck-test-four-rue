@@ -36,11 +36,12 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'drf_yasg',
+    'corsheaders',
     'rest_framework',
     'rest_framework_simplejwt',
     'products',
+    'users',
 
-    'corsheaders',
     
 
 ]
@@ -167,4 +168,17 @@ LOGGING = {
         'handlers': ['console'],
         'level': 'INFO',
     },
+}
+
+
+AUTH_USER_MODEL = 'users.CustomUser'
+
+SWAGGER_SETTINGS = {
+   'SECURITY_DEFINITIONS': {
+      'Bearer': {
+            'type': 'apiKey',
+            'name': 'Authorization',
+            'in': 'header'
+      }
+   }
 }
