@@ -1,0 +1,50 @@
+db.sqlite3
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg-info/
+*.egg
+
+# Django
+*.log
+*.sqlite3
+db.sqlite3
+/media
+/staticfiles
+/env/
+.venv/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# IDEs y editores
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+
+# Archivos de configuración
+*.env
+*.local
+
+# Archivos de caché
+*.cache
+*.pyc
+
+# Archivos de documentación
+*.pdf
+*.docx
+
+# Otros
+*.DS_Store
+*.coverage
+*.egg
+*.iml
+*.log
+*.pot
+*.mo
+*.swp
