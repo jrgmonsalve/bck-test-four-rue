@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'corsheaders',
     'rest_framework',
     'rest_framework_simplejwt',
+    'mptt',
     'products',
     'users',
 
@@ -182,3 +183,4 @@ SWAGGER_SETTINGS = {
       }
    }
 }
+APPEND_SLASH = False
